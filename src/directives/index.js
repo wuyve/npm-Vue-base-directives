@@ -4,6 +4,7 @@ import debounce from './debounce.js'
 import draggable from './draggable.js'
 import lazyLoad from './lazyLoad.js'
 import waterMarker from './waterMarker'
+import permission from './permission.js'
 
 // 自定义指令
 const directives = {
@@ -11,7 +12,8 @@ const directives = {
   debounce,
   draggable,
   lazyLoad,
-  waterMarker
+  waterMarker,
+  permission
 }
 
 

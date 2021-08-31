@@ -22,6 +22,10 @@ const router = new Router({
       path: '/waterMarker',
       name: 'WaterMarker',
       component: () => import('../views/WaterMarker.vue')
+    }, {
+      path: '/permission',
+      name: 'Permission',
+      component: () => import('../views/Permission.vue')
     }
   ]
 })
