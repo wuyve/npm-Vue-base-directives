@@ -1,3 +1,4 @@
+// 图片懒加载
 const lazyLoad = {
   bind(el, binding) { 
     // 一张1px*1px的图片
@@ -7,9 +8,6 @@ const lazyLoad = {
     // 初始化
     el.setAttribute('data-src', realSrc)
     el.setAttribute('src', inventSrc)
-
-    console.log(realSrc)
-    console.log(binding)
   },
   inserted (el, binding) {
     // IntersectionObserver 有兼容性
@@ -23,7 +21,6 @@ const lazyLoad = {
     }
   },
   observe (el, src) {
-    console.log(el)
     const io = new IntersectionObserver(entries => {
       const realSrc = src
       if (entries[0].isIntersecting) {
@@ -36,7 +33,6 @@ const lazyLoad = {
     io.observe(el)
   },
   listenerScroll (el, src) {
-    console.log(el)
     const handler = lazyLoad.throttle(lazyLoad.load, 300)
     lazyLoad.load(el, src)
     window.addEventListener('scroll', () => handler(el, src))

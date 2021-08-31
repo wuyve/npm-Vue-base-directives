@@ -1,5 +1,5 @@
 <template>
-  <div class="lazy-load">
+  <div class="lazy-load" v-waterMarker="'wuyve'">
     <img v-for="(item, index) in imgList" :key="index" v-lazyLoad="item.img">
   </div>
 </template>

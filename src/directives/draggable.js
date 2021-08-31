@@ -6,7 +6,7 @@
  * @Description: In User Settings Edit
  * @FilePath: vue-base-directives/src/directives/copy.js
  */
-
+// 拖拽
 const draggable = {
   inserted: function (el) {
     el.style.cursor = 'move';

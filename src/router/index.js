@@ -18,6 +18,10 @@ const router = new Router({
       path: '/testCopy',
       name: 'TestCopy',
       component: () => import('../views/TestCopy.vue')
+    }, {
+      path: '/waterMarker',
+      name: 'WaterMarker',
+      component: () => import('../views/WaterMarker.vue')
     }
   ]
 })

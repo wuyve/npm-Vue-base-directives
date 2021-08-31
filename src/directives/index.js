@@ -3,13 +3,15 @@ import copy from './copy.js'
 import debounce from './debounce.js'
 import draggable from './draggable.js'
 import lazyLoad from './lazyLoad.js'
+import waterMarker from './waterMarker'
 
 // 自定义指令
 const directives = {
   copy,
   debounce,
   draggable,
-  lazyLoad
+  lazyLoad,
+  waterMarker
 }
 
 
